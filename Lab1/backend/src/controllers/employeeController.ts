@@ -1,12 +1,11 @@
 import { Request, Response } from "express";
-import { Pool } from "pg";
+import pool from "../db";
+
 import dotenv from "dotenv";
 
 dotenv.config();
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-});
+
 
 export const getEmployees = async (req: Request, res: Response) => {
   try {
