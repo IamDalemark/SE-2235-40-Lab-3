@@ -13,7 +13,7 @@ beforeAll(async (): Promise<void> => {
     CREATE TABLE IF NOT EXISTS employees (
       id SERIAL PRIMARY KEY,
       firstname VARCHAR(100) NOT NULL,
-      lastname VARCHAR(100) NOT NULL,
+      lastname VARCHAR(100) NOT NULL, 
       groupname VARCHAR(100),
       role VARCHAR(100),
       expectedsalary INTEGER,
